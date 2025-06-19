@@ -1,7 +1,5 @@
 🌟 Variables globales / constantes sugeridas
-javascript
-Copiar
-Editar
+
 // =======================
 // Server Configuration
 // =======================
