@@ -46,3 +46,35 @@ const SUCCESS_MESSAGES = {
   LOGIN_SUCCESS: "Login successful.",
   REGISTRATION_SUCCESS: "User registered successfully."
 };
+
+
+
+✅ Nombres de funciones sugeridas (Clean Code)
+🟣 Para el registro de usuarios
+javascript
+
+async function registerUser(userData) { ... }
+async function isEmailTaken(email) { ... }
+async function hashPassword(password) { ... }
+async function saveUserToDatabase(user) { ... }
+
+🟣 Para el login de usuarios
+
+async function loginUser(credentials) { ... }
+async function verifyPassword(inputPassword, hashedPassword) { ... }
+function generateAuthToken(user) { ... }
+
+🟣 Para middleware de autenticación
+
+function authenticateToken(req, res, next) { ... }
+function authorizeUserRole(requiredRole) { ... }  // Ej: proteger rutas de admin
+
+🟣 Para dashboard y gestión
+
+async function getUserDashboardData(userId) { ... }
+
+🟣 Para validaciones generales
+
+function isValidEmail(email) { ... }
+function isValidPassword(password) { ... }
+
