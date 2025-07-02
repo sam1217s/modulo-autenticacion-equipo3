@@ -1,0 +1,32 @@
+{
+  "name": "auth-app-frontend",
+  "version": "1.0.0",
+  "description": "Frontend para sistema de autenticación",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "dev": "live-server --port=3000 --host=localhost",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/css/style.min.css src/css/*.css",
+    "minify-js": "uglifyjs src/js/*.js -o dist/js/app.min.js",
+    "lint": "eslint src/js/",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.0",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "keywords": ["html", "css", "javascript", "authentication", "responsive"],
+  "author": "Frontend Developer",
+  "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
