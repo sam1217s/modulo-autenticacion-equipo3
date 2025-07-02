@@ -1,111 +1,142 @@
-# 🔐 Módulo de Autenticación
+# 🔒 Auth App Backend
 
-## 🎯 Objetivo
-Desarrollar un módulo de autenticación con login, registro de usuarios y visualización de un dashboard. El proyecto aplica buenas prácticas de **Clean Code** y se gestiona mediante **GitHub Projects**.
+Backend API for user authentication system built with Node.js, Express, MongoDB, and JWT.
 
----
+## 🚀 Quick Start
 
-## 🧩 Historias de Usuario
+### Prerequisites
+- Node.js (v16 or higher)
+- MongoDB (local or cloud)
+- npm or yarn
 
-1️⃣ **Login**
-> Como **usuario registrado**, quiero **iniciar sesión con mi correo y contraseña**, para **acceder al panel de control de la aplicación**.
+### Installation
 
-2️⃣ **Registro**
-> Como **visitante**, quiero **registrarme proporcionando mis datos**, para **crear una cuenta y utilizar la plataforma**.
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd backend
+```
 
-3️⃣ **Dashboard**
-> Como **usuario autenticado**, quiero **ver un dashboard con opciones y estadísticas**, para **gestionar mi información y acceder rápidamente a funcionalidades clave**.
+2. **Install dependencies**
+```bash
+npm install
+```
 
----
+3. **Environment Setup**
+```bash
+cp .env.example .env
+# Edit .env with your configuration
+```
 
-## 🚀 Enlace al tablero de proyecto
-👉 [GitHub Projects - Módulo de Autenticación](https://github.com/usuario/repositorio/projects/1)  
-*(Reemplaza con el enlace real de tu proyecto)*
+4. **Start the server**
+```bash
+# Development mode
+npm run dev
 
----
+# Production mode
+npm start
+```
 
-## 🧑‍🤝‍🧑 Integrantes del equipo
+## 📁 Project Structure
 
-| Nombre      | Rol                 |
-|-------------|---------------------|
-| Samuel      | Frontend / Git Master |
-| Karol       | Backend / QA          |
-| angie      | Backend / QA |
-| franklin   | Diseño / Testing      |
+```
+src/
+├── controllers/     # Request handlers
+├── middleware/      # Custom middleware
+├── models/         # Database models
+├── routes/         # API routes
+└── server.js       # Main server file
+```
 
----
+## 🔑 Environment Variables
 
-## 🌟 Variables globales / constantes sugeridas
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `PORT` | Server port | `4000` |
+| `MONGO_URI` | MongoDB connection string | Required |
+| `JWT_SECRET` | JWT signing secret | Required |
+| `JWT_EXPIRES_IN` | Token expiration time | `7d` |
+| `BCRYPT_ROUNDS` | Password hashing rounds | `12` |
+| `FRONTEND_URL` | Frontend URL for CORS | `http://localhost:3000` |
 
-```javascript
-// =======================
-// Server Configuration
-// =======================
-const SERVER_PORT = process.env.PORT || 3000;
-const API_BASE_URL = "/api/v1";
+## 📚 API Endpoints
 
-// =======================
-// Database
-// =======================
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/auth_module_db";
+### Authentication Routes (`/api/auth`)
 
-// =======================
-// Security
-// =======================
-const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY || "your-secure-jwt-secret";
-const JWT_EXPIRES_IN = "2h";  // Token expiration (2 hours)
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| `POST` | `/register` | Register new user | ❌ |
+| `POST` | `/login` | Login user | ❌ |
+| `GET` | `/dashboard` | Get dashboard data | ✅ |
+| `GET` | `/me` | Get user profile | ✅ |
+| `PUT` | `/profile` | Update user profile | ✅ |
+| `POST` | `/logout` | Logout user | ✅ |
 
-// =======================
-// User Roles
-// =======================
-const USER_ROLES = {
-  ADMIN: "admin",
-  USER: "user"
-};
+### Example Requests
 
-// =======================
-// Validation Rules
-// =======================
-const PASSWORD_MIN_LENGTH = 8;
-const PASSWORD_MAX_LENGTH = 32;
-const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+**Register User**
+```bash
+curl -X POST http://localhost:4000/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{"username": "johndoe", "password": "securepass123"}'
+```
 
-// =======================
-// Messages
-// =======================
-const ERROR_MESSAGES = {
-  USER_NOT_FOUND: "User not found.",
-  INVALID_PASSWORD: "Invalid password.",
-  EMAIL_ALREADY_REGISTERED: "Email is already registered.",
-  UNAUTHORIZED_ACCESS: "Unauthorized access."
-};
+**Login User**
+```bash
+curl -X POST http://localhost:4000/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username": "johndoe", "password": "securepass123"}'
+```
 
-const SUCCESS_MESSAGES = {
-  LOGIN_SUCCESS: "Login successful.",
-  REGISTRATION_SUCCESS: "User registered successfully."
-};
+**Access Protected Route**
+```bash
+curl -X GET http://localhost:4000/api/auth/dashboard \
+  -H "Authorization: Bearer YOUR_JWT_TOKEN"
+```
 
+## 🛠️ Development
 
-✅ Nombres de funciones sugeridas (Clean Code)
-🟣 Para el registro de usuarios
+### Available Scripts
 
-async function registerUser(userData) { ... }
-async function isEmailTaken(email) { ... }
-async function hashPassword(password) { ... }
-async function saveUserToDatabase(user) { ... }
-🟣 Para el login de usuarios
+- `npm run dev` - Start development server with nodemon
+- `npm start` - Start production server
+- `npm test` - Run tests
+- `npm run lint` - Run ESLint
 
-async function loginUser(credentials) { ... }
-async function verifyPassword(inputPassword, hashedPassword) { ... }
-function generateAuthToken(user) { ... }
-🟣 Para middleware de autenticación
+### Code Style
 
-function authenticateToken(req, res, next) { ... }
-function authorizeUserRole(requiredRole) { ... }  // Ejemplo: proteger rutas de admin
-🟣 Para dashboard y gestión
+- Use ES6+ features
+- Follow REST API conventions
+- Implement proper error handling
+- Add input validation
+- Use meaningful variable names
 
-async function getUserDashboardData(userId) { ... }
-🟣 Para validaciones generales
+## 🔒 Security Features
 
-function isValidEmail(email) { ... }
-function isValidPassword(password) { ... }
+- Password hashing with bcrypt
+- JWT token authentication
+- Input validation and sanitization
+- CORS protection
+- Error handling without sensitive data exposure
+
+## 🧪 Testing
+
+```bash
+npm test
+```
+
+## 📝 Contributing
+
+1. Create feature branch from `backend-dev`
+2. Make changes following code style
+3. Test your changes
+4. Submit pull request to `backend-dev`
+
+## 👥 Team
+
+- **Desarrollador Backend 1**: Authentication & User Management
+- **Desarrollador Backend 2**: API Routes & Database Integration
+
+## 📄 License
+
+MIT License
