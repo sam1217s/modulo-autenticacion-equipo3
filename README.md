@@ -1,3 +1,4 @@
+
 # 🔒 Auth App Backend
 
 Backend API for user authentication system built with Node.js, Express, MongoDB, and JWT.
