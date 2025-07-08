@@ -394,7 +394,7 @@ async function handleLogin(event) {
  */
 function validateRegistrationForm(formData) {
   const errors = [];
-  const { username, password, confirmPassword, acceptTerms } = formData;
+  const { username, password, confirmPassword } = formData;
   
   // Validate username
   const usernameValidation = Utils.validateUsername(username);
@@ -413,7 +413,10 @@ function validateRegistrationForm(formData) {
     errors.push('Las contraseñas no coinciden');
   }
   
-  // Validate terms acceptance
+  // ✅ ARREGLO: Verificar checkbox directamente desde el DOM
+  const acceptTermsCheckbox = document.getElementById('acceptTerms');
+  const acceptTerms = acceptTermsCheckbox ? acceptTermsCheckbox.checked : false;
+  
   if (!acceptTerms) {
     errors.push('Debes aceptar los términos y condiciones');
   }
