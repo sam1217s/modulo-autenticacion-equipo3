@@ -58,35 +58,69 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
 
 ---
 
-## 🚀 **METODOLOGÍA SCRUM - 5 SPRINTS DE 5 HORAS DIARIAS**
+## 🚀 **METODOLOGÍA SCRUM - 5 SPRINTS DE 6 HORAS CADA UNO**
 
 ### ⏰ **HORARIO DE TRABAJO SCRUM**
-- **📅 Duración por Sprint**: 2 semanas (10 días laborables)
+- **📅 Duración por Sprint**: 6 horas (5 días laborables = 1 semana)
 - **🕐 Horario Diario**: 12:30 PM - 6:00 PM (5 horas)
 - **☕ Descanso**: 30 minutos (3:00 PM - 3:30 PM)
 - **⚡ Horas Efectivas**: 4.5 horas productivas por día
-- **📊 Total por Sprint**: 45 horas de desarrollo por persona
-- **🎯 Total del Proyecto**: 225 horas por desarrollador
+- **📊 Distribución Sprint**: 6 horas concentradas de desarrollo por sprint
+- **🎯 Total del Proyecto**: 30 horas de desarrollo (5 sprints × 6h)
 
 ### 📋 **SPRINT PLANNING DETALLADO**
 
-| Sprint | Semanas | Días Lab. | Horas/Persona | Objetivo Principal | Líder |
-|--------|---------|-----------|---------------|-------------------|--------|
-| **Sprint 1** | 1-2 | 10 días | 45h | Setup & Arquitectura | Angie |
-| **Sprint 2** | 3-4 | 10 días | 45h | Backend Core & Auth | Angie |
-| **Sprint 3** | 5-6 | 10 días | 45h | Frontend UI/UX | Samuel |
-| **Sprint 4** | 7-8 | 10 días | 45h | Integración & Testing | Franklin |
-| **Sprint 5** | 9-10 | 10 días | 45h | Refinamiento & Deploy | Todo el equipo |
+| Sprint | Semana | Días Lab. | Horas Totales | Objetivo Principal | Líder |
+|--------|--------|-----------|---------------|-------------------|--------|
+| **Sprint 1** | Semana 1 | 5 días | 6h | Setup & Arquitectura | Angie |
+| **Sprint 2** | Semana 2 | 5 días | 6h | Backend Core & Auth | Angie |
+| **Sprint 3** | Semana 3 | 5 días | 6h | Frontend UI/UX | Samuel |
+| **Sprint 4** | Semana 4 | 5 días | 6h | Integración & Testing | Franklin |
+| **Sprint 5** | Semana 5 | 5 días | 6h | Refinamiento & Deploy | Todo el equipo |
 
-### 🕐 **CRONOGRAMA DIARIO SCRUM**
+### 🕐 **CRONOGRAMA DIARIO SCRUM INTENSIVO**
 ```
-12:30 PM - 12:45 PM  │ Daily Standup (15 min)
-12:45 PM - 3:00 PM   │ Trabajo Concentrado (2h 15min)
+12:30 PM - 12:35 PM  │ Daily Standup (5 min)
+12:35 PM - 1:45 PM   │ 🎯 Trabajo Sprint (1h 10min)
+1:45 PM - 3:00 PM    │ Trabajo Individual (1h 15min)
 3:00 PM - 3:30 PM    │ ☕ DESCANSO (30 min)
-3:30 PM - 6:00 PM    │ Trabajo Concentrado (2h 30min)
+3:30 PM - 6:00 PM    │ Trabajo Individual (2h 30min)
 ```
 
-**Total: 4h 45min productivas + 15min standup = 5h diarias**
+### ⚡ **DISTRIBUCIÓN DE 6 HORAS POR SPRINT**
+```
+📊 ENFOQUE INTENSIVO POR SPRINT:
+
+Sprint 1 (6h): Setup & Arquitectura
+├── 2h → Configuración repositorio y herramientas
+├── 2h → Estructura base backend/frontend  
+├── 1h → Documentación inicial
+└── 1h → Planning Sprint 2
+
+Sprint 2 (6h): Backend Core
+├── 3h → Sistema autenticación JWT
+├── 2h → API endpoints y validación
+└── 1h → Testing y documentación
+
+Sprint 3 (6h): Frontend UI/UX  
+├── 3h → Desarrollo interface completa
+├── 2h → Integración con backend
+└── 1h → Testing responsive
+
+Sprint 4 (6h): Integración & Testing
+├── 2h → Testing integración completa
+├── 2h → Pruebas usuario y UX
+├── 1h → Bug fixes
+└── 1h → Documentación final
+
+Sprint 5 (6h): Deploy & Refinamiento
+├── 2h → Optimización y deployment
+├── 2h → Documentación completa
+├── 1h → Testing final
+└── 1h → Presentación y cierre
+```
+
+**Total: 30 horas de desarrollo concentrado en 5 semanas**
 
 ---
 
@@ -396,53 +430,73 @@ npm run dev
 
 ## 📊 **PROGRESO DEL PROYECTO**
 
-### ✅ **Estado Actual de Sprints**
-- [x] **Sprint 1**: Fundación y Setup (100% - 45h completadas)
-- [x] **Sprint 2**: Backend Core & Auth (100% - 45h completadas)  
-- [x] **Sprint 3**: Frontend UI/UX (100% - 45h completadas)
-- [ ] **Sprint 4**: Integración & Testing (0% - 0h/45h)
-- [ ] **Sprint 5**: Refinamiento & Deploy (0% - 0h/45h)
+### ✅ **Estado Actual de Sprints (Metodología Intensiva)**
+- [x] **Sprint 1**: Fundación y Setup (100% - 6h completadas)
+- [x] **Sprint 2**: Backend Core & Auth (100% - 6h completadas)  
+- [x] **Sprint 3**: Frontend UI/UX (100% - 6h completadas)
+- [ ] **Sprint 4**: Integración & Testing (0% - 0h/6h)
+- [ ] **Sprint 5**: Refinamiento & Deploy (0% - 0h/6h)
 
-### 📈 **Métricas del Proyecto**
+### 📈 **Métricas del Proyecto (Desarrollo Ágil Intensivo)**
 - **👥 Desarrolladores**: 4 personas
-- **⏰ Horas diarias**: 5 horas (4.5h productivas + 0.5h meetings)
-- **📅 Días por sprint**: 10 días laborables
-- **🕐 Horas por sprint/persona**: 45 horas
-- **📊 Total horas proyecto**: 900 horas (4 personas × 225h)
-- **✅ Horas completadas**: 540h (60% del proyecto)
-- **⏳ Horas restantes**: 360h (40% del proyecto)
+- **⏰ Horario disponible**: 5 horas diarias (4.5h productivas + ceremonias)
+- **📅 Duración por sprint**: 1 semana (5 días laborables)
+- **🕐 Horas por sprint**: 6 horas concentradas de desarrollo
+- **📊 Total horas proyecto**: 30 horas (5 sprints × 6h)
+- **✅ Horas completadas**: 18h (60% del proyecto)
+- **⏳ Horas restantes**: 12h (40% del proyecto - 2 sprints)
 
-### 📋 **Métricas de Calidad**
+### 📋 **Métricas de Calidad (Desarrollo Intensivo)**
 - **Commits totales**: 150+
 - **Issues resueltos**: 45/50 (90%)
 - **Test coverage**: 85%
 - **Performance score**: 90/100
 - **Accessibility score**: 95/100
 - **Code review coverage**: 100%
+- **Sprints completados a tiempo**: 3/5 (60%)
 
-### ⏱️ **Distribución de Tiempo Real**
+### ⏱️ **Distribución Real de 18 Horas Completadas**
 ```
-📊 DESGLOSE DE 540 HORAS COMPLETADAS:
+📊 DESGLOSE INTENSIVO DE DESARROLLO:
 
-Backend Development (Angie & Karol):
-├── Sprint 1: 90h (45h × 2 personas)
-├── Sprint 2: 90h (45h × 2 personas)  
-└── Sprint 3: 20h (soporte a frontend)
-Total Backend: 200 horas
+Sprint 1 (6h): Setup & Arquitectura
+├── Angie: 2h (Backend setup)
+├── Karol: 1h (API structure)
+├── Samuel: 2h (Frontend base)
+└── Franklin: 1h (Documentation)
 
-Frontend Development (Samuel):
-├── Sprint 1: 45h (setup y diseño)
-├── Sprint 2: 15h (preparación API)
-└── Sprint 3: 45h (desarrollo completo)
-Total Frontend: 105 horas
+Sprint 2 (6h): Backend Core & Auth  
+├── Angie: 3h (JWT + Models)
+├── Karol: 2h (API Routes)
+├── Samuel: 0.5h (API testing)
+└── Franklin: 0.5h (Backend testing)
 
-Documentation & QA (Franklin):
-├── Sprint 1: 45h (docs iniciales)
-├── Sprint 2: 45h (testing backend)
-└── Sprint 3: 45h (testing UX)
-Total QA/Docs: 135 horas
+Sprint 3 (6h): Frontend UI/UX
+├── Samuel: 4h (Complete UI/UX)
+├── Angie: 1h (Backend support)
+├── Karol: 0.5h (API refinement)
+└── Franklin: 0.5h (UX testing)
 
-Meetings & Ceremonias: 100 horas
+Total por persona:
+├── Angie: 6 horas
+├── Karol: 3.5 horas  
+├── Samuel: 6.5 horas
+└── Franklin: 2 horas
+```
+
+### 🎯 **Proyección Sprints Restantes (12h)**
+```
+Sprint 4 (6h): Integración & Testing
+├── Todo el equipo: Integration testing
+├── Franklin: 3h (User testing + docs)
+├── Samuel: 2h (Frontend polish)
+└── Angie/Karol: 1h (Backend optimization)
+
+Sprint 5 (6h): Deploy & Refinamiento
+├── Todo el equipo: Final deployment
+├── Franklin: 2h (Final documentation)
+├── Samuel: 2h (Performance optimization)
+└── Angie/Karol: 2h (Production setup)
 ```
 
 ---
@@ -509,51 +563,52 @@ main
 - **👥 Participantes**: Todo el equipo (Angie, Karol, Samuel, Franklin)
 - **📝 Registro**: Notas en GitHub Projects/Issues
 
-### 📅 **Sprint Ceremonies & Horarios**
+### 📅 **Sprint Ceremonies & Horarios (Intensivos)**
 
 #### **🎯 Sprint Planning** 
-- **📅 Cuándo**: Primer lunes de cada sprint
-- **⏰ Horario**: 12:30 PM - 2:30 PM (2 horas)
+- **📅 Cuándo**: Lunes de cada semana (inicio de sprint)
+- **⏰ Horario**: 12:30 PM - 1:30 PM (1 hora)
 - **👥 Participantes**: Todo el equipo
-- **🎯 Objetivo**: Planificar las 45 horas de trabajo por persona
+- **🎯 Objetivo**: Planificar las 6 horas intensivas del sprint
 
 #### **📊 Sprint Review**
-- **📅 Cuándo**: Último viernes de cada sprint  
-- **⏰ Horario**: 4:30 PM - 5:30 PM (1 hora)
+- **📅 Cuándo**: Viernes de cada semana (fin de sprint)
+- **⏰ Horario**: 5:00 PM - 5:30 PM (30 minutos)
 - **👥 Participantes**: Todo el equipo + Stakeholders
-- **🎯 Objetivo**: Demo de entregables del sprint
+- **🎯 Objetivo**: Demo rápida de entregables del sprint
 
 #### **🔄 Sprint Retrospective**
-- **📅 Cuándo**: Último viernes de cada sprint
+- **📅 Cuándo**: Viernes de cada semana (después del review)
 - **⏰ Horario**: 5:30 PM - 6:00 PM (30 minutos)
 - **👥 Participantes**: Solo el equipo de desarrollo
-- **🎯 Objetivo**: Mejorar el proceso para el siguiente sprint
+- **🎯 Objetivo**: Mejora continua semanal
 
-### ⏱️ **Gestión del Tiempo por Sprint**
+### ⏱️ **Gestión Intensiva del Tiempo por Sprint**
 ```
-📊 DISTRIBUCIÓN DE 45 HORAS POR SPRINT:
+📊 DISTRIBUCIÓN DE 6 HORAS POR SPRINT:
 
-├── 40 horas (89%) → Desarrollo activo
-├── 3 horas (7%)   → Meetings & ceremonias SCRUM  
-├── 1 hora (2%)    → Code review & documentación
-└── 1 hora (2%)    → Buffer para imprevistos
+├── 5 horas (83%) → Desarrollo activo concentrado
+├── 0.5 horas (8%) → Sprint ceremonies
+├── 0.25 horas (4%) → Code review rápido
+└── 0.25 horas (4%) → Buffer para imprevistos
+
+🎯 FILOSOFÍA: "Desarrollo intensivo y enfocado"
 ```
 
-### 🔄 **Ciclo de Desarrollo Diario**
+### 🔄 **Ciclo Semanal Intensivo**
 ```
-12:30 PM  ┌─────────────────────────────────────┐
-          │ 🗣️ Daily Standup (15 min)          │
-12:45 PM  ├─────────────────────────────────────┤
-          │ 💻 Desarrollo Concentrado           │
-          │ - Coding/Design/Testing             │
-          │ - Code review                       │
-3:00 PM   ├─────────────────────────────────────┤
-          │ ☕ DESCANSO (30 min)               │ 
-3:30 PM   ├─────────────────────────────────────┤
-          │ 💻 Desarrollo Concentrado           │
-          │ - Integration/Documentation         │
-          │ - Bug fixing/Testing                │
-6:00 PM   └─────────────────────────────────────┘
+LUNES    ┌─────────────────────────────────────┐
+12:30 PM │ 🎯 Sprint Planning (1h)             │
+1:30 PM  │ 💻 Desarrollo Sprint Intensivo      │
+         │                                     │
+MAR-JUE  │ 💻 Desarrollo Diario                │
+12:30 PM │ 🗣️ Daily Standup (5 min)            │
+12:35 PM │ 💻 Trabajo concentrado              │
+         │                                     │
+VIERNES  │ 💻 Finalización Sprint              │
+5:00 PM  │ 📊 Sprint Review (30 min)           │
+5:30 PM  │ 🔄 Retrospective (30 min)           │
+6:00 PM  └─────────────────────────────────────┘
 ```
 
 ---
