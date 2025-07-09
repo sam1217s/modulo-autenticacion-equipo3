@@ -60,7 +60,7 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
 ## 🚀 **METODOLOGÍA SCRUM - 5 SPRINTS DE 6 HORAS CADA UNO**
 
 ### ⏰ **HORARIO DE TRABAJO SCRUM**
-- **📅 Duración por Sprint**: 6 horas (5 días laborables = 1 semana)
+- **📅 Duración por Sprint**: 6 horas 
 - **🕐 Horario Diario**: 12:30 PM - 6:00 PM (5 horas)
 - **☕ Descanso**: 30 minutos (3:00 PM - 3:30 PM)
 - **⚡ Horas Efectivas**: 4.5 horas productivas por día
@@ -76,15 +76,6 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
 | **Sprint 3** | Semana 3 | 1 día | 6h | Frontend UI/UX | Samuel |
 | **Sprint 4** | Semana 4 | 1 día | 6h | Integración & Testing | Franklin |
 | **Sprint 5** | Semana 5 | 1 día | 6h | Refinamiento & Deploy | Todo el equipo |
-
-### 🕐 **CRONOGRAMA DIARIO SCRUM INTENSIVO**
-```
-12:30 PM - 12:35 PM  │ Daily Standup (5 min)
-12:35 PM - 1:45 PM   │ 🎯 Trabajo Sprint (1h 10min)
-1:45 PM - 3:00 PM    │ Trabajo Individual (1h 15min)
-3:00 PM - 3:30 PM    │ ☕ DESCANSO (30 min)
-3:30 PM - 6:00 PM    │ Trabajo Individual (2h 30min)
-```
 
 ### ⚡ **DISTRIBUCIÓN DE 6 HORAS POR SPRINT**
 ```
