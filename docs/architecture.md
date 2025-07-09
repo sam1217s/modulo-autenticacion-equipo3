@@ -10,7 +10,7 @@
 
 ## 🎯 **Visión General de la Arquitectura**
 
-Auth App utiliza una **arquitectura de 3 capas** con separación clara entre frontend, backend y base de datos, siguiendo patrones de diseño modernos y mejores prácticas de seguridad.
+Auth App utiliza una **arquitectura de 3 capas** con frontend, backend y base de datos, siguiendo patrones de diseño modernos y mejores prácticas de seguridad.
 
 ### 🔧 **Stack Tecnológico**
 
