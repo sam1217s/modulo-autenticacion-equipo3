@@ -438,7 +438,7 @@ body {
 }
 
 /* ========================================
-   FORM OPTIONS
+   FORM OPTIONS - CHECKBOX CORREGIDO
 ======================================== */
 .form-options {
   display: flex;
@@ -453,6 +453,7 @@ body {
   gap: var(--spacing-sm);
   cursor: pointer;
   font-size: 0.875rem;
+  user-select: none; /* Evita selección de texto accidental */
 }
 
 .checkbox-wrapper input[type="checkbox"] {
@@ -466,26 +467,41 @@ body {
   border-radius: var(--radius-sm);
   position: relative;
   transition: all var(--transition-fast);
+  flex-shrink: 0; /* Evita que se deforme */
+  display: flex; /* Asegura que se muestre */
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+}
+
+.checkbox-custom:hover {
+  border-color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.05);
 }
 
 .checkbox-wrapper input[type="checkbox"]:checked + .checkbox-custom {
   background: var(--primary-color);
   border-color: var(--primary-color);
+  transform: scale(1.05);
 }
 
 .checkbox-wrapper input[type="checkbox"]:checked + .checkbox-custom::after {
   content: '✓';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: var(--text-white);
   font-size: 0.75rem;
   font-weight: bold;
+  line-height: 1;
+}
+
+.checkbox-wrapper input[type="checkbox"]:focus + .checkbox-custom {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 .checkbox-label {
   color: var(--text-secondary);
+  line-height: 1.4;
+  cursor: pointer;
 }
 
 .forgot-password {
