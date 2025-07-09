@@ -1,9 +1,9 @@
 # 🧪 Testing Documentation - Auth App
 
 ## 📋 **Información del Documento**
-- **Autor**: Franklin - QA & Documentation Specialist
+- **Autor**: Franklin 
 - **Versión**: 1.0.0
-- **Fecha**: Sprint 4 - Testing & QA
+- **Fecha**: Sprint 4
 - **Estado**: Documentación completa de testing
 
 ---
