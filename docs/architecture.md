@@ -3,7 +3,7 @@
 ## 📋 **Información del Documento**
 - **Autor**: Franklin 
 - **Versión**: 1.0.0
-- **Fecha**: Última actualización Sprint 4
+- **Fecha**: Última actualización Sprint 5
 - **Estado**: Terminado
 
 ---
