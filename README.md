@@ -73,7 +73,7 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
 | Sprint | Semana | Días Lab. | Horas Totales | Objetivo Principal | Líder |
 |--------|--------|-----------|---------------|-------------------|--------|
 | **Sprint 1** | Semana 1 | 1 día | 6h | Setup & Arquitectura | Angie |
-| **Sprint 2** | Semana 2 | 1 día | 6h | Backend Core & Auth | Angie |
+| **Sprint 2** | Semana 2 | 1 día | 6h | Backend Core & Auth |Karol|
 | **Sprint 3** | Semana 3 | 1 día | 6h | Frontend UI/UX | Samuel |
 | **Sprint 4** | Semana 4 | 1 día | 6h | Integración & Testing | Franklin |
 | **Sprint 5** | Semana 5 | 1 día | 6h | Refinamiento & Deploy | Todo el equipo |
