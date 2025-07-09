@@ -1,10 +1,10 @@
 # 🏗️ Arquitectura del Sistema - Auth App
 
 ## 📋 **Información del Documento**
-- **Autor**: Franklin - QA & Documentation Specialist
+- **Autor**: Franklin 
 - **Versión**: 1.0.0
-- **Fecha**: Última actualización Sprint 3
-- **Estado**: En desarrollo
+- **Fecha**: Última actualización Sprint 4
+- **Estado**: Terminado
 
 ---
 
