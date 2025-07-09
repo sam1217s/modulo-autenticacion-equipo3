@@ -8,9 +8,14 @@ const isDevelopment = window.location.hostname === 'localhost' ||
                      window.location.hostname === '127.0.0.1' ||
                      window.location.hostname.includes('192.168.');
 
+// Get current origin for production
+const getProductionBaseUrl = () => {
+  return window.location.origin; // Usa el dominio actual de Render
+};
+
 // API Configuration
 const API_CONFIG = {
-  BASE_URL: isDevelopment ? 'http://localhost:4000' : 'https://your-production-api.com',
+  BASE_URL: isDevelopment ? 'http://localhost:4000' : getProductionBaseUrl(),
   ENDPOINTS: {
     AUTH: '/api/auth',
     HEALTH: '/api/health'
@@ -23,7 +28,7 @@ const API_CONFIG = {
 const APP_CONFIG = {
   NAME: 'AuthApp',
   VERSION: '1.0.0',
-  AUTHOR: 'Frontend Team',
+  AUTHOR: 'Equipo 3',
   
   // Storage keys for localStorage
   STORAGE_KEYS: {

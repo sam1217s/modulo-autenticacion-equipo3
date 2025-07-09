@@ -1,0 +1,32 @@
+{
+  "name": "modulo-autenticacion-equipo3",
+  "version": "1.0.0",
+  "description": "Sistema de autenticación moderno desarrollado con metodología SCRUM",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "nodemon backend/src/server.js",
+    "test": "cd backend && npm test",
+    "lint": "cd backend && npm run lint"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "eslint": "^8.0.0"
+  },
+  "keywords": ["nodejs", "express", "mongodb", "jwt", "authentication", "scrum"],
+  "author": "Equipo 3 - Backend Team",
+  "license": "MIT"
+}
