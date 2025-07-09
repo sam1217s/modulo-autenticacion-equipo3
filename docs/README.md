@@ -12,7 +12,7 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
 ## 👥 **EQUIPO DE DESARROLLO Y ROLES ESPECÍFICOS**
 
 ### 🔧 **Backend Development Team**
-- **👩‍💻 Angie - Backend Developer Senior**
+- **👩‍💻 Angie - Backend
   - **Rol Principal**: Líder Backend & Arquitectura de Datos
   - **Responsabilidades Específicas**:
     - Diseño y implementación de modelos de base de datos (MongoDB/Mongoose)
@@ -20,10 +20,9 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
     - Desarrollo de controladores de autenticación (register/login)
     - Implementación de middleware de seguridad y validación
     - Configuración del servidor Express y estructura del proyecto
-    - Code review y mentoring del equipo backend
   
-- **👩‍💻 Karol - Backend Developer**
-  - **Rol Principal**: Especialista en API & Integración
+- **👩‍💻 Karol - Backend 
+  - **Rol Principal**: API & Integración
   - **Responsabilidades Específicas**:
     - Desarrollo de rutas API RESTful (/api/auth)
     - Implementación de endpoints y manejo de respuestas HTTP
@@ -33,8 +32,8 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
     - Documentación técnica de endpoints
 
 ### 🎨 **Frontend Development Team**
-- **👨‍💻 Samuel - Frontend Developer Full-Stack**
-  - **Rol Principal**: Especialista UI/UX & Experiencia de Usuario
+- **👨‍💻 Samuel 
+  - **Rol Principal**: UI/UX 
   - **Responsabilidades Específicas**:
     - Desarrollo completo de interfaces de usuario (HTML5, CSS3, JavaScript ES6+)
     - Implementación de diseño responsive y mobile-first
@@ -45,8 +44,8 @@ Sistema de autenticación moderno desarrollado con **metodología SCRUM** por un
     - Testing de compatibilidad cross-browser y dispositivos móviles
 
 ### 📚 **Quality Assurance & Documentation Team**
-- **👨‍💻 Franklin - QA Engineer & Technical Writer**
-  - **Rol Principal**: Especialista en Calidad y Documentación Técnica
+- **👨‍💻 Franklin 
+  - **Rol Principal**: Documentación Técnica
   - **Responsabilidades Específicas**:
     - Diseño e implementación de casos de prueba (test cases)
     - Ejecución de pruebas de usuario y usabilidad (UX testing)
@@ -125,7 +124,6 @@ Sprint 5 (6h): Deploy & Refinamiento
 ---
 
 ## 📅 **SPRINT 1: FUNDACIÓN Y SETUP**
-**🗓️ Duración:** Semanas 1-2  
 **🎯 Objetivo:** Establecer la base del proyecto y arquitectura
 
 ### 🔧 **Backend (Angie & Karol)**
@@ -159,7 +157,6 @@ Sprint 5 (6h): Deploy & Refinamiento
 ---
 
 ## 📅 **SPRINT 2: BACKEND CORE & AUTENTICACIÓN**
-**🗓️ Duración:** Semanas 3-4  
 **🎯 Objetivo:** Desarrollar el sistema de autenticación completo
 
 ### 🔧 **Backend (Angie & Karol)**
@@ -201,7 +198,6 @@ Sprint 5 (6h): Deploy & Refinamiento
 ---
 
 ## 📅 **SPRINT 3: FRONTEND UI/UX COMPLETO**
-**🗓️ Duración:** Semanas 5-6  
 **🎯 Objetivo:** Desarrollar la interfaz de usuario completa
 
 ### 🎨 **Frontend (Samuel)**
@@ -253,8 +249,7 @@ Sprint 5 (6h): Deploy & Refinamiento
 ---
 
 ## 📅 **SPRINT 4: INTEGRACIÓN Y TESTING COMPLETO**
-**🗓️ Duración:** Semanas 7-8  
-**🎯 Objetivo:** Integrar frontend y backend, testing exhaustivo
+**🎯 Objetivo:** Integrar frontend y backend, testing
 
 ### 🔗 **Integración (Todo el Equipo)**
 
@@ -292,7 +287,6 @@ Sprint 5 (6h): Deploy & Refinamiento
 ---
 
 ## 📅 **SPRINT 5: REFINAMIENTO Y DEPLOYMENT**
-**🗓️ Duración:** Semanas 9-10  
 **🎯 Objetivo:** Pulir la aplicación y preparar para producción
 
 ### 🚀 **Deployment & Refinamiento (Todo el Equipo)**
@@ -434,72 +428,16 @@ npm run dev
 - [x] **Sprint 1**: Fundación y Setup (100% - 6h completadas)
 - [x] **Sprint 2**: Backend Core & Auth (100% - 6h completadas)  
 - [x] **Sprint 3**: Frontend UI/UX (100% - 6h completadas)
-- [ ] **Sprint 4**: Integración & Testing (0% - 0h/6h)
-- [ ] **Sprint 5**: Refinamiento & Deploy (0% - 0h/6h)
+- [x] **Sprint 4**: Integración & Testing (100% - 0h/6h)
+- [x] **Sprint 5**: Refinamiento & Deploy (100% - 0h/6h)
 
 ### 📈 **Métricas del Proyecto (Desarrollo Ágil Intensivo)**
 - **👥 Desarrolladores**: 4 personas
 - **⏰ Horario disponible**: 5 horas diarias (4.5h productivas + ceremonias)
-- **📅 Duración por sprint**: 1 semana (5 días laborables)
+- **📅 Duración por sprint**: 1 dia (5 días laborables)
 - **🕐 Horas por sprint**: 6 horas concentradas de desarrollo
 - **📊 Total horas proyecto**: 30 horas (5 sprints × 6h)
-- **✅ Horas completadas**: 18h (60% del proyecto)
-- **⏳ Horas restantes**: 12h (40% del proyecto - 2 sprints)
 
-### 📋 **Métricas de Calidad (Desarrollo Intensivo)**
-- **Commits totales**: 150+
-- **Issues resueltos**: 45/50 (90%)
-- **Test coverage**: 85%
-- **Performance score**: 90/100
-- **Accessibility score**: 95/100
-- **Code review coverage**: 100%
-- **Sprints completados a tiempo**: 3/5 (60%)
-
-### ⏱️ **Distribución Real de 18 Horas Completadas**
-```
-📊 DESGLOSE INTENSIVO DE DESARROLLO:
-
-Sprint 1 (6h): Setup & Arquitectura
-├── Angie: 2h (Backend setup)
-├── Karol: 1h (API structure)
-├── Samuel: 2h (Frontend base)
-└── Franklin: 1h (Documentation)
-
-Sprint 2 (6h): Backend Core & Auth  
-├── Angie: 3h (JWT + Models)
-├── Karol: 2h (API Routes)
-├── Samuel: 0.5h (API testing)
-└── Franklin: 0.5h (Backend testing)
-
-Sprint 3 (6h): Frontend UI/UX
-├── Samuel: 4h (Complete UI/UX)
-├── Angie: 1h (Backend support)
-├── Karol: 0.5h (API refinement)
-└── Franklin: 0.5h (UX testing)
-
-Total por persona:
-├── Angie: 6 horas
-├── Karol: 3.5 horas  
-├── Samuel: 6.5 horas
-└── Franklin: 2 horas
-```
-
-### 🎯 **Proyección Sprints Restantes (12h)**
-```
-Sprint 4 (6h): Integración & Testing
-├── Todo el equipo: Integration testing
-├── Franklin: 3h (User testing + docs)
-├── Samuel: 2h (Frontend polish)
-└── Angie/Karol: 1h (Backend optimization)
-
-Sprint 5 (6h): Deploy & Refinamiento
-├── Todo el equipo: Final deployment
-├── Franklin: 2h (Final documentation)
-├── Samuel: 2h (Performance optimization)
-└── Angie/Karol: 2h (Production setup)
-```
-
----
 
 ## 🧪 **TESTING STRATEGY**
 
@@ -521,7 +459,6 @@ Sprint 5 (6h): Deploy & Refinamiento
 - Accessibility Testing
 - Bug Tracking & Reporting
 
----
 
 ## 📚 **DOCUMENTACIÓN**
 
@@ -554,115 +491,15 @@ main
 ```
 
 ### 📋 **Daily Scrum Standup**
-- **⏰ Horario**: 12:30 PM - 12:45 PM (15 minutos exactos)
-- **📍 Formato**: Presencial/Virtual (Discord/Teams)
+- **⏰ Horario**: 12:30 PM - 12:45 
+- **📍 Formato**: Presencial/Virtual (Discord)
 - **❓ Preguntas Clave**:
   1. ¿Qué completé ayer en las 5 horas de trabajo?
   2. ¿Qué planeo hacer hoy en mi bloque de 4.5 horas?
   3. ¿Tengo algún bloqueador que impida mi progreso?
 - **👥 Participantes**: Todo el equipo (Angie, Karol, Samuel, Franklin)
 - **📝 Registro**: Notas en GitHub Projects/Issues
-
-### 📅 **Sprint Ceremonies & Horarios (Intensivos)**
-
-#### **🎯 Sprint Planning** 
-- **📅 Cuándo**: Lunes de cada semana (inicio de sprint)
-- **⏰ Horario**: 12:30 PM - 1:30 PM (1 hora)
-- **👥 Participantes**: Todo el equipo
-- **🎯 Objetivo**: Planificar las 6 horas intensivas del sprint
-
-#### **📊 Sprint Review**
-- **📅 Cuándo**: Viernes de cada semana (fin de sprint)
-- **⏰ Horario**: 5:00 PM - 5:30 PM (30 minutos)
-- **👥 Participantes**: Todo el equipo + Stakeholders
-- **🎯 Objetivo**: Demo rápida de entregables del sprint
-
-#### **🔄 Sprint Retrospective**
-- **📅 Cuándo**: Viernes de cada semana (después del review)
-- **⏰ Horario**: 5:30 PM - 6:00 PM (30 minutos)
-- **👥 Participantes**: Solo el equipo de desarrollo
-- **🎯 Objetivo**: Mejora continua semanal
-
-### ⏱️ **Gestión Intensiva del Tiempo por Sprint**
-```
-📊 DISTRIBUCIÓN DE 6 HORAS POR SPRINT:
-
-├── 5 horas (83%) → Desarrollo activo concentrado
-├── 0.5 horas (8%) → Sprint ceremonies
-├── 0.25 horas (4%) → Code review rápido
-└── 0.25 horas (4%) → Buffer para imprevistos
-
-🎯 FILOSOFÍA: "Desarrollo intensivo y enfocado"
-```
-
-### 🔄 **Ciclo Semanal Intensivo**
-```
-LUNES    ┌─────────────────────────────────────┐
-12:30 PM │ 🎯 Sprint Planning (1h)             │
-1:30 PM  │ 💻 Desarrollo Sprint Intensivo      │
-         │                                     │
-MAR-JUE  │ 💻 Desarrollo Diario                │
-12:30 PM │ 🗣️ Daily Standup (5 min)            │
-12:35 PM │ 💻 Trabajo concentrado              │
-         │                                     │
-VIERNES  │ 💻 Finalización Sprint              │
-5:00 PM  │ 📊 Sprint Review (30 min)           │
-5:30 PM  │ 🔄 Retrospective (30 min)           │
-6:00 PM  └─────────────────────────────────────┘
-```
-
----
-
-## 📞 **CONTACTO DEL EQUIPO**
-
-### 👥 **Roles, Responsabilidades y Horarios**
-
-| Miembro | Rol | Email | Especialidad | Horario Disponible |
-|---------|-----|-------|--------------|-------------------|
-| **👩‍💻 Angie** | Backend Lead | angie@team.com | API, Database, Security | 12:30 PM - 6:00 PM |
-| **👩‍💻 Karol** | Backend Dev | karol@team.com | Integration, Testing | 12:30 PM - 6:00 PM |
-| **👨‍💻 Samuel** | Frontend Lead | samuel@team.com | UI/UX, JavaScript | 12:30 PM - 6:00 PM |
-| **👨‍💻 Franklin** | QA & Docs | franklin@team.com | Documentation, Testing | 12:30 PM - 6:00 PM |
-
-### ⏰ **Horarios de Comunicación**
-- **🕐 Horario Laboral**: 12:30 PM - 6:00 PM (Lunes a Viernes)
-- **☕ Descanso**: 3:00 PM - 3:30 PM (No disponible)
-- **🗣️ Daily Standup**: 12:30 PM - 12:45 PM (Todo el equipo)
-- **📞 Meetings**: 4:30 PM - 6:00 PM (Viernes - Sprint ceremonies)
-- **🚨 Emergencias**: Fuera de horario solo para issues críticos
-
-### 🔗 **Links y Recursos del Proyecto**
-- **📁 Repositorio**: [GitHub - Auth App](https://github.com/team/auth-app)
-- **📋 Project Board**: [GitHub Projects](https://github.com/team/auth-app/projects/1)
-- **📚 API Docs**: [Swagger Documentation](https://api.auth-app.com/docs)
-- **🌐 Live Demo**: [https://auth-app-demo.com](https://auth-app-demo.com)
-- **💬 Chat del Equipo**: Discord/Slack #auth-app-dev
-- **📊 Sprint Tracking**: [JIRA/Trello Board](https://trello.com/auth-app)
-
-### 📋 **Protocolo de Comunicación**
-```
-🚨 URGENTE (0-2h response):
-├── Production bugs
-├── Security issues  
-└── Bloqueadores críticos
-
-⚡ ALTA (2-4h response):
-├── Sprint bloqueadores
-├── Integration issues
-└── Deploy problems
-
-📊 NORMAL (mismo día):
-├── Feature questions
-├── Code review
-└── Documentation
-
-📝 BAJA (1-2 días):
-├── Enhancement ideas
-├── Refactoring suggestions
-└── General questions
-```
-
----
+- 
 
 ## 📄 **LICENCIA**
 
