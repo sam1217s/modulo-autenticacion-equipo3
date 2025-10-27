@@ -169,139 +169,229 @@
           </button>
         </div>
 
-        <!-- Quick Actions -->
-        <section class="quick-actions">
-          <button class="quick-action-btn">
-            <i class="fas fa-plus"></i>
-            <span>Nuevo Proyecto</span>
-          </button>
-          <button class="quick-action-btn">
-            <i class="fas fa-file-invoice"></i>
-            <span>Crear Factura</span>
-          </button>
-          <button class="quick-action-btn">
-            <i class="fas fa-users"></i>
-            <span>Invitar Usuario</span>
-          </button>
-        </section>
+        <!-- Default Dashboard View -->
+        <div id="dashboardView" class="section-view active">
+          <!-- Quick Actions -->
+          <section class="quick-actions">
+            <button class="quick-action-btn">
+              <i class="fas fa-plus"></i>
+              <span>Nuevo Proyecto</span>
+            </button>
+            <button class="quick-action-btn">
+              <i class="fas fa-file-invoice"></i>
+              <span>Crear Factura</span>
+            </button>
+            <button class="quick-action-btn">
+              <i class="fas fa-users"></i>
+              <span>Invitar Usuario</span>
+            </button>
+          </section>
 
-        <!-- Stats Cards -->
-        <section class="stats-section">
-          <div class="stats-grid">
-            <!-- Earnings Card -->
-            <div class="stat-card earnings-card">
-              <div class="card-content">
-                <div class="card-header">
-                  <h3>Ganancias</h3>
-                  <div class="card-icon">
-                    <i class="fas fa-chart-line"></i>
+          <!-- Stats Cards -->
+          <section class="stats-section">
+            <div class="stats-grid">
+              <!-- Earnings Card -->
+              <div class="stat-card earnings-card">
+                <div class="card-content">
+                  <div class="card-header">
+                    <h3>Ganancias</h3>
+                    <div class="card-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
                   </div>
-                </div>
-                <div class="card-value">
-                  <span class="currency">€</span>
-                  <span class="amount" id="earningsAmount">0</span>
-                </div>
-                <div class="card-change positive" id="earningsChange">
-                  <i class="fas fa-arrow-up"></i>
-                  +10% desde el mes pasado
-                </div>
-              </div>
-            </div>
-
-            <!-- Rank Card -->
-            <div class="stat-card rank-card">
-              <div class="card-content">
-                <div class="card-header">
-                  <h3>Ranking</h3>
-                  <div class="card-icon">
-                    <i class="fas fa-trophy"></i>
+                  <div class="card-value">
+                    <span class="currency">€</span>
+                    <span class="amount" id="earningsAmount">0</span>
                   </div>
-                </div>
-                <div class="rank-number" id="rankNumber">98</div>
-                <div class="rank-description" id="rankDescription">en top 100</div>
-              </div>
-            </div>
-
-            <!-- Projects Card -->
-            <div class="stat-card projects-card">
-              <div class="card-content">
-                <div class="card-header">
-                  <h3>Proyectos</h3>
-                  <div class="card-icon">
-                    <i class="fas fa-project-diagram"></i>
-                  </div>
-                </div>
-                <div class="projects-number" id="projectsNumber">32</div>
-                <div class="projects-status">
-                  <div class="status-item">
-                    <span class="status-dot mobile"></span>
-                    <span id="projectsPending">mobile app</span>
-                  </div>
-                  <div class="status-item">
-                    <span class="status-dot branding"></span>
-                    <span id="projectsCompleted">branding</span>
+                  <div class="card-change positive" id="earningsChange">
+                    <i class="fas fa-arrow-up"></i>
+                    +10% desde el mes pasado
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        <!-- Content Grid -->
-        <section class="content-grid">
-          <!-- Recent Invoices -->
-          <div class="content-card invoices-card">
-            <div class="card-header">
-              <h3>Facturas Recientes</h3>
-              <a href="#" class="view-all-link">Ver todas</a>
-            </div>
-            <div class="invoices-list" id="invoicesList">
-              <!-- Dynamic content -->
-            </div>
-          </div>
+              <!-- Rank Card -->
+              <div class="stat-card rank-card">
+                <div class="card-content">
+                  <div class="card-header">
+                    <h3>Ranking</h3>
+                    <div class="card-icon">
+                      <i class="fas fa-trophy"></i>
+                    </div>
+                  </div>
+                  <div class="rank-number" id="rankNumber">98</div>
+                  <div class="rank-description" id="rankDescription">en top 100</div>
+                </div>
+              </div>
 
-          <!-- Your Projects -->
-          <div class="content-card projects-list-card">
-            <div class="card-header">
-              <h3>Tus Proyectos</h3>
-              <a href="#" class="view-all-link">Ver todos</a>
+              <!-- Projects Card -->
+              <div class="stat-card projects-card">
+                <div class="card-content">
+                  <div class="card-header">
+                    <h3>Proyectos</h3>
+                    <div class="card-icon">
+                      <i class="fas fa-project-diagram"></i>
+                    </div>
+                  </div>
+                  <div class="projects-number" id="projectsNumber">32</div>
+                  <div class="projects-status">
+                    <div class="status-item">
+                      <span class="status-dot mobile"></span>
+                      <span id="projectsPending">mobile app</span>
+                    </div>
+                    <div class="status-item">
+                      <span class="status-dot branding"></span>
+                      <span id="projectsCompleted">branding</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="projects-list" id="projectsList">
-              <!-- Dynamic content -->
-            </div>
-          </div>
+          </section>
 
-          <!-- Recommended Project -->
-          <div class="content-card recommended-project-card">
-            <div class="card-header">
-              <h3>Proyecto Recomendado</h3>
-              <button class="btn btn-sm btn-outline">
-                <i class="fas fa-heart"></i>
-                Guardar
+          <!-- Content Grid -->
+          <section class="content-grid">
+            <!-- Recent Invoices -->
+            <div class="content-card invoices-card">
+              <div class="card-header">
+                <h3>Facturas Recientes</h3>
+                <a href="#" class="view-all-link">Ver todas</a>
+              </div>
+              <div class="invoices-list" id="invoicesList">
+                <!-- Dynamic content -->
+              </div>
+            </div>
+
+            <!-- Your Projects -->
+            <div class="content-card projects-list-card">
+              <div class="card-header">
+                <h3>Tus Proyectos</h3>
+                <a href="#" class="view-all-link">Ver todos</a>
+              </div>
+              <div class="projects-list" id="projectsList">
+                <!-- Dynamic content -->
+              </div>
+            </div>
+
+            <!-- Recommended Project -->
+            <div class="content-card recommended-project-card">
+              <div class="card-header">
+                <h3>Proyecto Recomendado</h3>
+                <button class="btn btn-sm btn-outline">
+                  <i class="fas fa-heart"></i>
+                  Guardar
+                </button>
+              </div>
+              <div class="recommended-project" id="recommendedProject">
+                <!-- Dynamic content -->
+              </div>
+            </div>
+          </section>
+
+          <!-- Engagement Banner -->
+          <section class="engagement-banner">
+            <div class="banner-content">
+              <div class="banner-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="banner-text">
+                <h4>Conecta con la comunidad</h4>
+                <p>Únete a nuestro canal de Slack y colabora con otros profesionales</p>
+              </div>
+              <button class="banner-btn">
+                <i class="fab fa-slack"></i>
+                Únete ahora
               </button>
             </div>
-            <div class="recommended-project" id="recommendedProject">
-              <!-- Dynamic content -->
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <!-- Engagement Banner -->
-        <section class="engagement-banner">
-          <div class="banner-content">
-            <div class="banner-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="banner-text">
-              <h4>Conecta con la comunidad</h4>
-              <p>Únete a nuestro canal de Slack y colabora con otros profesionales</p>
-            </div>
-            <button class="banner-btn">
-              <i class="fab fa-slack"></i>
-              Únete ahora
+        <!-- Projects View -->
+        <div id="projectsView" class="section-view">
+          <div class="section-header">
+            <h2>Proyectos</h2>
+            <button class="btn btn-primary">
+              <i class="fas fa-plus"></i>
+              Nuevo Proyecto
             </button>
           </div>
-        </section>
+          <div id="projectsContent" class="projects-content">
+            <!-- Content will be loaded here -->
+          </div>
+        </div>
+
+        <!-- Invoices View -->
+        <div id="invoicesView" class="section-view">
+          <div class="section-header">
+            <h2>Facturas</h2>
+            <button class="btn btn-primary">
+              <i class="fas fa-file-invoice"></i>
+              Crear Factura
+            </button>
+          </div>
+          <div id="invoicesContent" class="invoices-content">
+            <!-- Content will be loaded here -->
+          </div>
+        </div>
+
+        <!-- Reports View -->
+        <div id="reportsView" class="section-view">
+          <div class="section-header">
+            <h2>Reportes</h2>
+            <button class="btn btn-primary">
+              <i class="fas fa-download"></i>
+              Exportar Reporte
+            </button>
+          </div>
+          <div id="reportsContent" class="reports-content">
+            <!-- Content will be loaded here -->
+          </div>
+        </div>
+
+        <!-- Profile View -->
+        <div id="profileView" class="section-view">
+          <div class="profile-container">
+            <div class="profile-header">
+              <div class="profile-avatar-section">
+                <img src="" alt="Avatar" id="profileAvatar" class="profile-avatar-large">
+                <h2 id="profileName">Usuario</h2>
+                <p id="profileRole">Miembro</p>
+              </div>
+            </div>
+            <div class="profile-content">
+              <div class="profile-form">
+                <h3>Información Personal</h3>
+                <div class="form-group">
+                  <label>Nombre de Usuario</label>
+                  <input type="text" id="profileUsername" class="form-input" readonly>
+                </div>
+                <div class="form-group">
+                  <label>Correo Electrónico</label>
+                  <input type="email" id="profileEmail" class="form-input" placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                  <label>Teléfono</label>
+                  <input type="tel" id="profilePhone" class="form-input" placeholder="+1234567890">
+                </div>
+                <button class="btn btn-primary">
+                  <i class="fas fa-save"></i>
+                  Guardar Cambios
+                </button>
+              </div>
+              <div class="profile-actions">
+                <h3>Acciones</h3>
+                <button class="btn btn-secondary" style="width: 100%;">
+                  <i class="fas fa-key"></i>
+                  Cambiar Contraseña
+                </button>
+                <button class="btn btn-secondary" style="width: 100%;">
+                  <i class="fas fa-cog"></i>
+                  Configuración
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </div>

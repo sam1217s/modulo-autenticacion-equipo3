@@ -477,9 +477,211 @@ class DashboardManager {
   handleNavigation(section) {
     window.devLog('Navigating to section:', section);
     
-    // Here you would implement actual navigation logic
-    // For now, just show a message
-    Utils.showAlert(`Navegando a: ${section}`, 'success', 2000);
+    // Hide all views
+    const views = Utils.querySelectorAll('.section-view');
+    views.forEach(view => Utils.removeClass(view, 'active'));
+    
+    // Remove active class from all nav items
+    Utils.querySelectorAll('.nav-item').forEach(item => {
+      Utils.removeClass(item, 'active');
+    });
+    
+    // Add active class to clicked nav item
+    const clickedNav = Utils.querySelector(`[data-section="${section}"]`)?.parentElement;
+    if (clickedNav) {
+      Utils.addClass(clickedNav, 'active');
+    }
+    
+    // Show corresponding view
+    const viewId = `${section}View`;
+    const view = Utils.getElementById(viewId);
+    
+    if (view) {
+      Utils.addClass(view, 'active');
+      
+      // Load content for the section
+      this.loadSectionContent(section);
+    } else {
+      Utils.showAlert('Vista no encontrada', 'error', 2000);
+    }
+  }
+  
+  loadSectionContent(section) {
+    switch(section) {
+      case 'dashboard':
+        // Dashboard content is already loaded
+        break;
+        
+      case 'projects':
+        this.loadProjectsSection();
+        break;
+        
+      case 'invoices':
+        this.loadInvoicesSection();
+        break;
+        
+      case 'reports':
+        this.loadReportsSection();
+        break;
+        
+      case 'profile':
+        this.loadProfileSection();
+        break;
+    }
+  }
+  
+  loadProjectsSection() {
+    const container = Utils.getElementById('projectsContent');
+    if (!container) return;
+    
+    const projects = [
+      {
+        title: 'Proyecto Mobile App',
+        description: 'Desarrollo de aplicación móvil para iOS y Android',
+        status: 'active',
+        progress: 65
+      },
+      {
+        title: 'Rebranding Corporativo',
+        description: 'Rediseño de identidad visual y marca',
+        status: 'pending',
+        progress: 30
+      },
+      {
+        title: 'Sistema de Gestión',
+        description: 'ERP personalizado para gestión empresarial',
+        status: 'completed',
+        progress: 100
+      },
+      {
+        title: 'E-commerce Platform',
+        description: 'Plataforma de comercio electrónico',
+        status: 'active',
+        progress: 45
+      }
+    ];
+    
+    container.innerHTML = projects.map(project => `
+      <div class="project-card">
+        <div class="card-icon-large">
+          <i class="fas fa-project-diagram"></i>
+        </div>
+        <h3 class="card-title">${project.title}</h3>
+        <p class="card-description">${project.description}</p>
+        <div class="card-footer">
+          <span class="card-badge badge-${project.status}">${project.status}</span>
+          <span style="color: var(--text-secondary); font-size: 0.875rem;">${project.progress}%</span>
+        </div>
+      </div>
+    `).join('');
+  }
+  
+  loadInvoicesSection() {
+    const container = Utils.getElementById('invoicesContent');
+    if (!container) return;
+    
+    const invoices = [
+      {
+        title: 'Factura #INV-001',
+        description: 'Servicios de desarrollo - Enero 2024',
+        amount: 2500.00,
+        status: 'paid',
+        date: '2024-01-15'
+      },
+      {
+        title: 'Factura #INV-002',
+        description: 'Consultoría y asesoramiento',
+        amount: 1500.00,
+        status: 'pending',
+        date: '2024-01-20'
+      },
+      {
+        title: 'Factura #INV-003',
+        description: 'Mantenimiento y soporte',
+        amount: 850.00,
+        status: 'paid',
+        date: '2024-01-25'
+      }
+    ];
+    
+    container.innerHTML = invoices.map(invoice => `
+      <div class="invoice-card">
+        <div class="card-icon-large">
+          <i class="fas fa-file-invoice"></i>
+        </div>
+        <h3 class="card-title">${invoice.title}</h3>
+        <p class="card-description">${invoice.description}</p>
+        <div class="card-footer">
+          <div>
+            <span class="card-badge badge-${invoice.status}">${invoice.status}</span>
+            <div style="margin-top: var(--spacing-sm); color: var(--text-secondary); font-size: 0.875rem;">
+              €${invoice.amount.toFixed(2)}
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+  }
+  
+  loadReportsSection() {
+    const container = Utils.getElementById('reportsContent');
+    if (!container) return;
+    
+    const reports = [
+      {
+        title: 'Reporte de Ventas',
+        description: 'Análisis mensual de ventas y tendencias',
+        period: 'Enero 2024',
+        icon: 'fas fa-chart-line'
+      },
+      {
+        title: 'Reporte Financiero',
+        description: 'Balance general y estado de resultados',
+        period: 'Q1 2024',
+        icon: 'fas fa-chart-pie'
+      },
+      {
+        title: 'Reporte de Actividad',
+        description: 'Logs y estadísticas de uso del sistema',
+        period: 'Últimos 30 días',
+        icon: 'fas fa-chart-bar'
+      }
+    ];
+    
+    container.innerHTML = reports.map(report => `
+      <div class="report-card">
+        <div class="card-icon-large">
+          <i class="${report.icon}"></i>
+        </div>
+        <h3 class="card-title">${report.title}</h3>
+        <p class="card-description">${report.description}</p>
+        <div class="card-footer">
+          <span style="color: var(--text-secondary); font-size: 0.875rem;">${report.period}</span>
+        </div>
+      </div>
+    `).join('');
+  }
+  
+  loadProfileSection() {
+    const user = window.Auth.user;
+    
+    if (user) {
+      const profileAvatar = Utils.getElementById('profileAvatar');
+      const profileName = Utils.getElementById('profileName');
+      const profileUsername = Utils.getElementById('profileUsername');
+      
+      if (profileAvatar) {
+        profileAvatar.src = Utils.generateAvatarUrl(user.username || user.name || 'User', '6366f1');
+      }
+      
+      if (profileName) {
+        profileName.textContent = user.name || user.username || 'Usuario';
+      }
+      
+      if (profileUsername) {
+        profileUsername.value = user.username || '';
+      }
+    }
   }
 
   performSearch(query) {
